@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B9BCAC;
+}
+
+header {
+    background-color: #698068;
+    display: flex;
+    justify-content: space-around;
+}
+
+header #header_logo {
+    width: 86px;
+    height: 86px;
+}
+
+header nav #navbar_list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
