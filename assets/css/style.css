@@ -11,7 +11,7 @@ body {
     background-color: #F1EBE3;
 }
 
-/* HEADER */
+/* header */
 
 header {
     display: flex;
@@ -45,18 +45,16 @@ a {
     text-decoration: none;
 }
 
-/* FIM DO HEADER */
+/* estilos para todas as sections */
 
-/* INÍCIO */
-
-#home {
+section {
     height: 85vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-#home_text {
+.text {
     width: 50%;
     padding: 50px 150px;
     display: flex;
@@ -64,36 +62,42 @@ a {
     justify-content: center;
 }
 
-#home_text h1 {
+.text h1 {
     font-family: "Lora", serif;
     color: #445343;
     margin-bottom: 20px;
     font-size: 30px;
 }
 
-#home_text p {
+.text p {
     font-size: 20px;
     text-align: justify;
     line-height: 28px;
     margin-bottom: 30px;
 }
 
-#home_image {
+.image {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center
 }
 
-#home_image img{
+.image img{
     width: 500px;
     height: 500px;
 }
 
-#instagram_button {
+/* estilos específicos */
+
+#contact {
+    display: flex;
+    gap: 50px;
+}
+
+.contact_button {
     border: none;
     background-color: #698068;
-    width: 200px;
     padding: 10px 15px;
     font-size: 18px;
     border-radius: 5px;
@@ -104,14 +108,25 @@ a {
     transition: background-color 0.2s;
 }
 
-#instagram_button i, span {
+.contact_button i, span {
     color: #FFF;
 }
 
-#instagram_button i {
+.contact_button i {
     font-size: 22px;
 }
 
-#instagram_button:hover {
+.contact_button:hover {
     background-color: #4F614E;
+}
+
+#lista_servicos {
+    padding: 0;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+#lista_servicos li {
+    font-size: 20px;
+    line-height: 28px;
 }
