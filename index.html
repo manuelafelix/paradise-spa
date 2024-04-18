@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="assets/images/logo_favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-query.css">
     <title>Paradise SPA</title>
 </head>
 <body>
@@ -13,7 +14,10 @@
         <header>
             <img src="assets/images/paradise-spa-logo.jpg" alt="Logo do Paradise SPA" id="header_logo">
             <nav>
-                <ul id="navbar_list">
+                <div id="navbar_responsive">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="navbar_list" class="list">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#quem_somos">Quem somos?</a></li>
                     <li><a href="#servicos">Serviços</a></li>
@@ -36,13 +40,13 @@
                     </a>
                 </div>
             </div>
-            <div class="image">
-                <img src="assets/images/home_image.jpg" alt="Toalhas, velas e pedras">
+            <div class="image" id="inicio_image">
+                <img src="assets/images/inicio_image.jpg" alt="Toalhas, velas e pedras">
             </div>
         </section>
 
         <section id="quem_somos">
-            <div class="image">
+            <div class="image" id="quem-somos_image">
                 <img src="assets/images/quem-somos_image.jpg" alt="Um quarto de um spa, com uma cama, toalhas, oleos, velas">
             </div>
             <div class="text">
@@ -66,10 +70,23 @@
                     <li>Sauna e banhos</li>
                 </ul>
             </div>
-            <div class="image">
+            <div class="image" id="servicos_image">
                 <img src="assets/images/servicos-image.jpg" alt="Uma mulher num quarto de um spa, fazendo máscara facial">
             </div>
         </section>
     </main>
+
+    <script>
+        const navbarResponsive = document.querySelector('#navbar_responsive i');
+        const navbarList = document.getElementById('navbar_list');
+
+        navbarResponsive.addEventListener('click', () => {
+            if (navbarList.style.display == 'none') {
+                navbarList.style.display = 'flex';
+            } else {
+                navbarList.style.display = 'none';
+            }
+        })
+    </script>
 </body>
 </html>

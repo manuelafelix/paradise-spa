@@ -1,0 +1,176 @@
+@media screen and (max-width: 1424px) {
+    section {
+        height: 70vh;
+    }
+    .text {
+        padding: 50px 100px;
+    }
+    .text h1 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .image img {
+        width: 400px;
+    }
+    .contact_button {
+        font-size: 12px;
+    }
+    .contact_button i {
+        font-size: 14px;
+    }
+    #lista_servicos li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 892px) {
+    section {
+        height: 40vh;
+    }
+    .text {
+        padding: 60px;
+    }
+    .text h1 {
+        font-size: 20px;
+    }
+    .text p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .image img {
+        width: 300px;
+    }
+    .contact_button {
+        font-size: 10px;
+    }
+    .contact_button i {
+        font-size: 12px;
+    }
+    #lista_servicos li {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 783px) {
+    .text {
+        padding: 50px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .contact_button {
+        font-size: 8px;
+        padding: 8px 20px;
+        justify-content: center;
+    }
+    .contact_button i {
+        font-size: 8px;
+    }
+    #lista_servicos li {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    section {
+        height: 50vh;
+    }
+    .text {
+        padding: 50px 30px;
+    }
+    .image img {
+        width: 250px;
+    }
+    #contact {
+        flex-direction: column;
+    }
+    .contact_button {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        justify-content: space-between;
+    }
+    header #header_logo {
+        margin-left: 30px;
+        width: 50px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar_list {
+        text-align: end;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 20px;
+    }
+    #navbar_responsive {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #navbar_list_responsive {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    #navbar_list_responsive li {
+        font-size: 18px;
+        padding: 5px 0px;
+    }
+    section {
+        height: 45vh;
+        flex-direction: column;
+    }
+    .text {
+        width: 100%;
+        height: 100%;
+        padding: 0px 40px;
+    }
+    .image {
+        width: 100%;
+        padding: 50px 0px;
+    }
+    .image img {
+        width: 270px;
+    }
+    #inicio_image, #quem-somos_image {
+        display: none;
+    }
+    #contact {
+        flex-direction: row;
+    }
+    .contact_button {
+        width: 50%;
+        font-size: 9px;
+    }
+} 
+
+@media screen and (max-width: 349px) {
+   section {
+        height: 55vh;
+   }
+   .text {
+        padding: 0px 30px;
+   }
+   .text h1 {
+        font-size: 18px;
+   }
+   .text p {
+        font-size: 12px;
+   }
+   .image img {
+        width: 250px;
+   }
+   .contact_button {
+        width: 60%;
+        font-size: 8px;
+    }
+    #lista_servicos li {
+        font-size: 12px;
+    }
+}

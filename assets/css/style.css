@@ -22,7 +22,7 @@ header {
 
 header #header_logo {
     width: 86px;
-    height: 86px;
+    /* height: 86px; */
 }
 
 #navbar_list {
@@ -43,6 +43,15 @@ header #header_logo {
 
 a {
     text-decoration: none;
+}
+
+#navbar_responsive {
+    margin: 10px 25px 0px 0px;
+    font-size: 24px;
+}
+
+#navbar_responsive {
+    display: none;
 }
 
 /* estilos para todas as sections */
@@ -85,14 +94,13 @@ section {
 
 .image img{
     width: 500px;
-    height: 500px;
 }
 
 /* estilos específicos */
 
 #contact {
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 .contact_button {
@@ -129,4 +137,8 @@ section {
 #lista_servicos li {
     font-size: 20px;
     line-height: 28px;
+}
+
+.hidden {
+    display: none;
 }
