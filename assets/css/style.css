@@ -142,6 +142,10 @@ section {
     font-size: 22px;
 }
 
+.contact_button i, span {
+    color: #FAF2EA;
+}
+
 .contact_button:hover {
     background-color: #E9CFB1;
 }
