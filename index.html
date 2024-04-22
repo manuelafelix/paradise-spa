@@ -17,7 +17,13 @@
                 <div id="navbar_responsive">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <ul id="navbar_list" class="list">
+                <ul id="navbar_list_responsive">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#quem_somos">Quem somos?</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+
+                <ul id="navbar_list">
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#quem_somos">Quem somos?</a></li>
                     <li><a href="#servicos">Serviços</a></li>
@@ -41,13 +47,13 @@
                 </div>
             </div>
             <div class="image" id="inicio_image">
-                <img src="assets/images/inicio_image.jpg" alt="Toalhas, velas e pedras">
+                <img src="assets/images/inicio-image.jpg" alt="Toalhas, velas e pedras">
             </div>
         </section>
 
         <section id="quem_somos">
             <div class="image" id="quem-somos_image">
-                <img src="assets/images/quem-somos_image.jpg" alt="Um quarto de um spa, com uma cama, toalhas, oleos, velas">
+                <img src="assets/images/quem-somos-image.jpg" alt="Um quarto de um spa, com uma cama, toalhas, oleos, velas">
             </div>
             <div class="text">
                 <h1>Quem somos?</h1>
@@ -75,10 +81,10 @@
             </div>
         </section>
     </main>
-
+    <!-- javascript para o navbar responsivo -->
     <script>
         const navbarResponsive = document.querySelector('#navbar_responsive i');
-        const navbarList = document.getElementById('navbar_list');
+        const navbarList = document.getElementById('navbar_list_responsive');
 
         navbarResponsive.addEventListener('click', () => {
             if (navbarList.style.display == 'none') {

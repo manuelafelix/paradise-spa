@@ -4,30 +4,29 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Josefin Sans", sans-serif;
-    color: #2f2009;
+    color: #74440D;
 }
 
 body {
-    background-color: #F1EBE3;
+    background-color: #FAF2EA;
 }
 
-/* header */
+/* estilos para o header da página */
 
 header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0px 1px 15px #A68F70;
+    box-shadow: 0px 1px 15px #D2AD7A;
 }
 
 header #header_logo {
     width: 86px;
-    /* height: 86px; */
 }
 
 #navbar_list {
     display: flex;
-    gap: 55px;
+    gap: 60px;
     list-style: none;
 }
 
@@ -38,19 +37,42 @@ header #header_logo {
 }
 
 #navbar_list li:hover {
-    border-bottom: 2px solid #2F2009;
+    border-bottom: 2px solid #74440D;
 }
 
 a {
     text-decoration: none;
 }
 
+/* estilos para a navbar responsiva */
+
 #navbar_responsive {
-    margin: 10px 25px 0px 0px;
+    margin: 10px 25px 10px 0px;
     font-size: 24px;
 }
 
 #navbar_responsive {
+    display: none;
+}
+
+#navbar_list_responsive {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 10px;
+    padding: 20px 20px;
+}
+
+#navbar_list_responsive li {
+    font-size: 18px;
+    text-align: end;
+}
+
+#navbar_list_responsive li:active {
+    border-bottom: 2px solid #74440D;
+}
+
+#navbar_list_responsive {
     display: none;
 }
 
@@ -73,7 +95,7 @@ section {
 
 .text h1 {
     font-family: "Lora", serif;
-    color: #445343;
+    color: #C78A43;
     margin-bottom: 20px;
     font-size: 30px;
 }
@@ -96,7 +118,7 @@ section {
     width: 500px;
 }
 
-/* estilos específicos */
+/* outros estilos específicos */
 
 #contact {
     display: flex;
@@ -105,7 +127,7 @@ section {
 
 .contact_button {
     border: none;
-    background-color: #698068;
+    background-color: #D2AD7A;
     padding: 10px 15px;
     font-size: 18px;
     border-radius: 5px;
@@ -116,16 +138,12 @@ section {
     transition: background-color 0.2s;
 }
 
-.contact_button i, span {
-    color: #FFF;
-}
-
 .contact_button i {
     font-size: 22px;
 }
 
 .contact_button:hover {
-    background-color: #4F614E;
+    background-color: #E9CFB1;
 }
 
 #lista_servicos {
@@ -137,8 +155,4 @@ section {
 #lista_servicos li {
     font-size: 20px;
     line-height: 28px;
-}
-
-.hidden {
-    display: none;
 }

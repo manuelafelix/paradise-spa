@@ -1,3 +1,4 @@
+/* telas maiores */
 @media screen and (max-width: 1424px) {
     section {
         height: 70vh;
@@ -24,7 +25,7 @@
         font-size: 18px;
     }
 }
-
+/* tablets */
 @media screen and (max-width: 892px) {
     section {
         height: 40vh;
@@ -54,6 +55,9 @@
 }
 
 @media screen and (max-width: 783px) {
+    section {
+        height: 50vh;
+    }
     .text {
         padding: 50px;
     }
@@ -90,7 +94,7 @@
         width: 60%;
     }
 }
-
+/* smartphones */
 @media screen and (max-width: 480px) {
     header {
         justify-content: space-between;
@@ -99,28 +103,13 @@
         margin-left: 30px;
         width: 50px;
     }
-    nav {
-        display: flex;
-        flex-direction: column;
-    }
     #navbar_list {
-        text-align: end;
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px 20px;
+        display: none;
     }
     #navbar_responsive {
         display: flex;
         justify-content: flex-end;
-    }
-    #navbar_list_responsive {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-    }
-    #navbar_list_responsive li {
-        font-size: 18px;
-        padding: 5px 0px;
+        align-items: center;
     }
     section {
         height: 45vh;
